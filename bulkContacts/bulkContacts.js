@@ -123,22 +123,8 @@ export default class BulkContacts extends LightningElement {
        if(event.target.name==='LastName')
        {
           this.contactRecList[event.target.accessKey].LastName=event.target.value;
-       }
-
-       else if(event.target.name==='Bank')
-       {
-          this.contactRecList[event.target.accessKey].Bank__c=event.target.value;
-       }
-
-       else if(event.target.name==='Email')
-       {
-          this.contactRecList[event.target.accessKey].Email=event.target.value;
-       }
-
-       else if(event.target.name==='Phone')
-       {
-          this.contactRecList[event.target.accessKey].Phone=event.target.value;
-       }
+       
+       
    }
 
 
