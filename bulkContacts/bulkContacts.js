@@ -160,7 +160,6 @@ export default class BulkContacts extends LightningElement {
         .then(response=>{
             this.getData();
             console.log(response);
-            this.closeModal;
             this.showToast('Success','Your Operation was successful!','SUCCESS');
 
         })
