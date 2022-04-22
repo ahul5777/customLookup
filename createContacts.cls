@@ -51,10 +51,11 @@ public with sharing class createContacts {
          try {
              if(!newContacts.isEmpty() )
              {
-                 upsert newContacts;
-             }if(!contactList.isEmpty())
+                  Database.insert(newContacts);
+             }
+             if(!contactList.isEmpty())
              {
-                 delete contactList;
+                 Database.delete(contactList);
              }
              return 'Success';
 
